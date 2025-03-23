@@ -1,0 +1,24 @@
+Left Factored Grammar:
+S -> Aa | b
+A -> Sc | d
+
+After removing Left Recursion:
+S -> Aa | b
+A -> bcA' | dA'
+A' -> acA' | ε
+
+FIRST and FOLLOW sets:
+
+FIRST(S) = {b, d}
+FOLLOW(S) = {$}
+FIRST(A) = {b, d}
+FOLLOW(A) = {a}
+FIRST(A') = {a, ε}
+FOLLOW(A') = {a}
+
+LL(1) Parsing Table:
+                             $              b              d              a
+---------------------------------------------------------------------------
+              S                             b             Aa               
+              A                          bcA'            dA'               
+             A'                                                          ε

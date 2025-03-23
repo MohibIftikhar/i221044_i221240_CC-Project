@@ -1,0 +1,3 @@
+S -> Aa | b
+A -> bcA' | dA'
+A' -> acA' | ε

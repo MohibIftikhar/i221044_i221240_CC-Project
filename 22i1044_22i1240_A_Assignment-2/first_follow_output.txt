@@ -1,0 +1,6 @@
+FIRST(S) = {b, d}
+FOLLOW(S) = {$}
+FIRST(A) = {b, d}
+FOLLOW(A) = {a}
+FIRST(A') = {a, ε}
+FOLLOW(A') = {a}
